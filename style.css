@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppons', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background: #ede7f6;
+}
+footer{
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    padding: 50px 100px;
+    background: #111;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+footer .container .sec{
+    margin-right: 30px;
+}
+footer .container .sec.aboutus{
+    width: 40%;
+}
+footer .container h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+footer .container h2:before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background: #f00;
+}
+footer p{
+    color: rgb(71, 69, 69);
+}
+.sci{
+    margin-top: 20px;
+    display: flex;
+}
+.sci li{
+    list-style: none;
+}
+.sci li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.sci li a:hover{
+    background: #f00;
+    cursor: pointer;
+}
+.sci li a .fa{
+    color: #fff;
+    font-size: 20px;
+}
+.quicklinks{
+    position: relative;
+    width: 25%;
+}
+.quicklinks ul li{
+    list-style: none;
+}
+.quicklinks ul li a{
+    color: #999;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.quicklinks ul li a:hover{
+    cursor: pointer;
+    color: #fff;
+}
+.contact{
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+.contact .info {
+    position: relative;
+}
+.contact .info li{
+    display: flex;
+    margin-bottom: 16px;
+}
+.contact .info li span:nth-child(1){
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.contact .info li span{
+    color: #999;
+}
+.contact .info li a {
+    color: #999;
+    text-decoration: none;
+}
+.contact .info li a:hover{
+    color: #fff;
+}
+.copyrightText{
+    width: 100%;
+    background: #181818;
+    color: #999;
+    padding: 9px 100px;
+    text-align: center;
+}
+@media (max-width: 991px)
+{
+    foooter{
+        padding: 40px;
+    }
+    footer .container{
+        flex-direction: column;
+    }
+    footer .container .sec{
+        margin-right: 0px;
+        margin-bottom: 40px;
+    }
+    footer .container .sec.aboutus, .quicklinks, .contact{
+        width: 100%;
+    }
+    footer .container h2{
+        align-items: center;
+        justify-content: center;
+    }
+    .copyrightText {
+        width: 100%;
+        background: #181818;
+        color: #999;
+        padding: 9px 40px;
+        text-align: center;
+    }
+}
+
+ 
+
+
+
+
+
